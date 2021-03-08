@@ -1,6 +1,7 @@
 import React from 'react';
-import ListForm from './ListForm'
-import TodoList from './TodoList'
+import ListForm from './ListForm';
+import TodoList from './TodoList';
+import './components/Todo.css';
 
 const todos = [
   {
@@ -57,16 +58,23 @@ class App extends React.Component {
   }
 
   clearList = () => {
-    this.setState({todos: todos})
+
+    this.setState({todos: [...todos]})
   }
+
+  // clearList = () => {
+  //   this.setState({
+
+  //   })
+  // }
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
   render() {
     return (
-      <div>
-        <div>
-          <h2>Welcome to your Todo App!</h2>
+      <div className='App'>
+        <div className='header'>
+          <h2 className='title'>Welcome to your Todo App!</h2>
           <ListForm addItem={this.addItem}/>
         </div>
         <TodoList 
