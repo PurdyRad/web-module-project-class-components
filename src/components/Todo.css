@@ -1,12 +1,12 @@
 .App {
-    background-image: url('http://cdn.shopify.com/s/files/1/0011/8793/8355/products/11_ce1f5de5-5566-4eaf-95a8-72860efc4c3c_1024x.jpg?v=1596410689');
+    background-image: url('https://images.genius.com/2b790e48bcd9779bce4dc5bc74a01118.300x533x1.png');
     background-position: center;
     background-size: cover;
 
 
 }
 .header {
-    background-color: steelblue;
+    /* background-color: steelblue; */
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -19,8 +19,11 @@
     color:wheat;
 }
 .clearBtn {
-    border-radius: 18%;
+    border-radius: 90%;
     border: none;
+    padding: 20px;
+    background: url('http://cdn.shopify.com/s/files/1/0011/8793/8355/products/11_ce1f5de5-5566-4eaf-95a8-72860efc4c3c_1024x.jpg?v=1596410689');
+    background-size: contain;
 }
 .todoList {
     display: flex;
@@ -36,7 +39,6 @@
   cursor: pointer;
   opacity: .5;
 }
-.item.done{
-    background-color: #63aae4;
+.itemdone{
     text-decoration: line-through;
   }
